@@ -6,6 +6,10 @@ function findMatching(drivers,name){
  return matchingDrivers;
 }
 
-function fuzzyMatch(){
+function fuzzyMatch(drivers, subString){
+  const matchingDrivers = drivers.filter(function (driver) {
+    return driver.toLowerCase() === name.toLowerCase(); });
+ 
+ return matchingDrivers; 
   
 }
